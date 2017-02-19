@@ -117,14 +117,6 @@ void loop() {
   now = millis();
   if (now - lastMsg > 30000) {
     timercheck=true;
-//    Adafruit_MQTT_Subscribe *subscription;
-//    while ((subscription = mqtt.readSubscription(5000))) {
-//      if (subscription == &twitter) {
-//        Serial.print(F("Got: "));
-//        message = (char *)twitter.lastread;
-//        Serial.println(message);
-//      }
-//    }
   }
 
   if (millis() - lastMoved >= MOVE_INTERVAL){
